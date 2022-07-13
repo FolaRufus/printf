@@ -3,6 +3,9 @@
 
 #include <stdarg.h> /* va_list */
 #include <unistd.h> /* write */
+#include <stdio.h>
+#include <limits.h>
+#include <stdlib.h>
 
 int _putchar(char c);
 int _printf(const char *format, ...);
