@@ -14,7 +14,7 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-		
+
 	va_start(list, format);
 	while (format[i])
 	{
@@ -45,4 +45,6 @@ int _printf(const char *format, ...)
 	}
 	va_end(list);
 	return (cprint);
-}
+
+	}
+

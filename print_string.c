@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * print_str - prints string
- * @list: variadic parameter 
- * Return: 1 
+ * @list: variadic parameter
+ * Return: 1
  */
 
 int print_str(va_list list)
@@ -18,6 +18,6 @@ int print_str(va_list list)
 		_putchar(str[i]);
 		i++;
 	}
-	
+
 	return (i);
 }
