@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+<<<<<<< HEAD
 #include <stdlib.h>
 #include <stdarg.h>
 
@@ -74,3 +75,9 @@ int print_address(va_list l, flags_t *f);
 int print_percent(va_list l, flags_t *f);
 
 #endif
+=======
+int _putchar(char c);
+int _printf(const char *format, ...);
+
+#endif // !MAIN_H
+>>>>>>> f10bfcf0208ffb9ab5d3ab7ff4a63767b2719f80
