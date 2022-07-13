@@ -2,25 +2,25 @@
 #define MAIN_H
 
 #include <stdarg.h> /* va_list */
-#include <stdlib.h> /* malloc, free */
-#include <unistd.h>
-#include <string.h>
+#include <unistd.h> /* write */
 
-/* _printf function prototypes */
 int _putchar(char c);
 int _printf(const char *format, ...);
-char *print_s(va_list list);
-char *print_c(va_list list);
+int (*find_function(const char *format))(va_list);
+int print_str(va_list list);
+int print_char(va_list list);
+int print_cent();
 
-/* helper functions */
-char *_strcpy(char *dest, char *str);
-int _strlen(char *s);
 
+/**
+ * struct types - contains different types of format
+ * @sc: The specifiers
+ * @funct: The associated function
+ */
 typedef struct types
 {
-	char id;
-	char* (*func)(va_list);
+	char *sc;
+	int (*func)(va_list);
 } print;
 
-
-#endif // MAIN_H
+#endif
