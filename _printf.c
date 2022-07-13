@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _printf - prints to the stdout
- * 
+ *
  * @format:  format(char, string, int, dec)
  * Return: size of output
  */
@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 	va_start(list, format);
 	while (format[i])
 	{
-		while (format[i] != '%' && format[i])	
+		while (format[i] != '%' && format[i])
 		{
 			_putchar(format[i]);
 			cprint++;
@@ -46,5 +46,6 @@ int _printf(const char *format, ...)
 	}
 	va_end(list);
 	return (cprint);
-		
+
 	}
+

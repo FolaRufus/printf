@@ -15,3 +15,4 @@ int print_char(va_list list)
 
 	return (1);
 }
+
