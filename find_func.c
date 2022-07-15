@@ -15,6 +15,12 @@ int (*find_function(const char *format))(va_list)
 			{"s", print_str},
 			{"i", print_int},
 			{"d", print_int},
+			{"u", print_unsigned},
+			{"b", print_unsignedToBinary},
+			{"o", print_oct},
+		 	{"x", print_hex},
+			{"X", print_HEX},
+			{"S", print_STR},
 			{NULL, NULL}};
 
 	while (find_f[i].sc)
@@ -26,4 +32,3 @@ int (*find_function(const char *format))(va_list)
 
 	return (NULL);
 }
-

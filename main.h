@@ -14,7 +14,16 @@ int print_str(va_list list);
 int print_char(va_list list);
 int print_cent(void);
 int print_int(va_list list);
-
+int print_unsigned(va_list arg);
+void print_binary(unsigned int n, unsigned int* printed);
+int print_unsignedToBinary(va_list arg);
+int print_oct(va_list arg);
+int print_hex_base(va_list arg, char _case);
+int print_hex(va_list arg);
+int print_HEX(va_list arg);
+int print_unsignedIntToHex(unsigned int num, char _case);
+int print_unsignedIntToHex(unsigned int num, char _case);
+int print_STR (va_list arg);
 
 /**
  * struct types - contains different types of format
