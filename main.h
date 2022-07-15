@@ -12,13 +12,13 @@ int _printf(const char *format, ...);
 int (*find_function(const char *format))(va_list);
 int print_str(va_list list);
 int print_char(va_list list);
-int print_cent();
+int print_cent(void);
 
 
 /**
  * struct types - contains different types of format
  * @sc: The specifiers
- * @funct: The associated function
+ * @func: The associated function
  */
 typedef struct types
 {
