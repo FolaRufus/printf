@@ -14,6 +14,7 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
+
 	va_start(list, format);
 	while (format[i])
 	{
@@ -24,9 +25,7 @@ int _printf(const char *format, ...)
 			i++;
 		}
 		if (format[i] == '\0')
-		{
 			return (cprint);
-		}
 
 		f = find_function(&format[i + 1]);
 		if (f != NULL)
