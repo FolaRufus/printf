@@ -13,6 +13,7 @@ int (*find_function(const char *format))(va_list);
 int print_str(va_list list);
 int print_char(va_list list);
 int print_cent(void);
+int print_int(va_list list);
 
 
 /**
