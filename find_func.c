@@ -13,7 +13,7 @@ int (*find_function(const char *format))(va_list)
 	print find_f[] = {
 			{"c", print_char},
 			{"s", print_str},
-			{"%", print_cent},
+			/*{"%", print_cent},*/
 			{NULL, NULL}};
 
 	while (find_f[i].sc)
