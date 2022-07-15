@@ -29,6 +29,11 @@ for (; divisor >= 1; n %= divisor, divisor /= 10, cprint++)
 return (cprint);
 }
 
+/**
+ * print_unsigned - prints an unsigned int.
+ * @arg: argument
+ * Return: 0
+ */
 int print_unsigned(va_list arg)
 {
 int divisor = 1, i, resp;

@@ -18,7 +18,7 @@ int (*find_function(const char *format))(va_list)
 			{"u", print_unsigned},
 			{"b", print_unsignedToBinary},
 			{"o", print_oct},
-		 	{"x", print_hex},
+			{"x", print_hex},
 			{"X", print_HEX},
 			{"S", print_STR},
 			{NULL, NULL}};
